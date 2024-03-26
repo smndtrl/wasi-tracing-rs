@@ -1,0 +1,17 @@
+[package]
+name = "wasi-tracing-rs"
+version = "0.1.0"
+edition = "2021"
+publish = false
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tracing-subscriber = { version = "0.3" }
+wasmtime-wasi = { version = "19", default-features = false }
+wasmtime = { version = "19", features = ['component-model'] }
+anyhow = { version = "1" }
+async-trait = "0.1.74"
+serde = { version = "1" }
+serde_json = { version = "1" }
+tracing-tunnel = { version = "0.1.0", features = ["receiver"] }
+tracing = { version = "0.1" }

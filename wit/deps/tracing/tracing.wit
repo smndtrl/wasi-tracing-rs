@@ -1,0 +1,10 @@
+package wasi:tracing;
+
+
+world tracing {
+    import producer;
+}
+
+interface producer {
+    send-event: func(event: list<u8>);
+}
