@@ -7,8 +7,8 @@ publish = false
 
 [dependencies]
 tracing-subscriber = { version = "0.3" }
-wasmtime-wasi = { version = "18", default-features = false }
-wasmtime = { version = "18", features = ['component-model'] }
+wasmtime-wasi = { version = "21", default-features = false }
+wasmtime = { version = "21", features = ['component-model'] }
 anyhow = { version = "1" }
 async-trait = "0.1.74"
 serde = { version = "1" }
